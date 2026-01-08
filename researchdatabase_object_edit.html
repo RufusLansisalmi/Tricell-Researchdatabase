@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Tricell Laboratories Inc</title>
+
+<script language="javascript" src="script/leftmenu.js"></script>
+<script language="javascript" src="script/researchdatabase_object_edit.js"></script> 
+
+<link rel="stylesheet" href="css/index.css" type="text/css">
+<link rel="stylesheet" href="css/leftmenu.css" type="text/css">
+
+<style>
+/* Samma stilar som dina andra sidor */
+#personnel {
+    width: 716px;
+    padding: 0px;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+#personnel td {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+td.infolight {
+    background-color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+    color: #000000;
+    padding: 5px;
+}
+input[type=text] {
+    width: 250px;
+    padding: 3px;
+}
+textarea {
+    width: 98%;
+    height: 150px;
+    resize: none;
+    font-family: Arial, sans-serif;
+}
+</style>
+</head>
+
+<body>
+
+<div id="leftsidebar" class="sidebar">
+<a href="javascript:void(0)" class="closemenubutton" onclick="closeMenu()">X</a>
+<b><a href=".html">Company Presentation</a></b>
+<b><a href=".html">Pharmaceutical Research</a></b>
+<b><a href=".html">Natural Resources</a></b>
+<b><a href=".html">Shipping</a></b>
+<b><a href=".html">History</a></b>
+<b><a href=".html">Headquarters</a></b>
+<b><a href=".html">Board of Directors</a></b>
+<b><a href=".html">International Suppliers</a></b>
+<b><a href=".html">Kijuju Laboratory</a></b>
+<b><a href=".html">Personnel Registry</a></b>
+</div>
+<div id="menubuttoncontainer">
+  <button class="openmenubutton" onclick="openMenu()">Sitemap</button>
+</div>
+
+<div id="headercontainer">
+<div id="headerleft"><img id="headerlogo" src="images/logo.gif" alt="Tricell Laboratories" /></div>
+<div id="headermiddle">
+<table>
+<tr>
+<td class="socialicon"><img src="images/social_fb.gif"></td>
+<td class="socialicon"><img src="images/social_insta.gif"></td>
+<td class="socialicon"><img src="images/social_pin.gif"></td>
+<td class="socialicon"><img src="images/social_snap.gif"></td>
+<td class="socialicon"><img src="images/social_twitter.gif"></td>
+<td class="socialicon"><img src="images/social_youtube.gif"></td>
+</tr>
+</table>
+</div>
+<div id="headerright">
+<table>
+    <tr><td colspan="2" align="center"><font class="contactheading">TRICELL LABORATORIES</font></td></tr>
+    <tr><td class="contacticon"><img src="images/contact_phone.gif"></td><td class="contactinfo">+324 (555)-541 236</td></tr>
+    <tr><td class="contacticon"><img src="images/contact_fax.gif"></td><td class="contactinfo">+324 (555)-543 626</td></tr>
+    <tr><td class="contacticon"><img src="images/contact_mail.gif"></td><td class="contactinfo">office@tricell.com</td></tr>
+    <tr><td class="contacticon"><img src="images/contact_web.gif"></td><td class="contactinfo">www.tricell.com</td></tr>
+</table>
+</div>
+</div>
+<div style="clear: both;"></div>
+<div id="mainmenuback">
+    <div class="menuitem"><table><tr><td class="mainmenuicon"><a href="index.html"><img src="images/menu_back.png"></a></td></tr></table></div>
+    <div class="menuitem"><table><tr><td class="mainmenuicon"><img src="images/menu_company.png"></td><td class="mainmenutext"><a href="company_presentation.html">Company Presentation</a></td><td class="mainmenudivider"></td></tr></table></div>
+    <div class="menuitem"><table><tr><td class="mainmenuicon"><img src="images/menu_history.png"></td><td class="mainmenutext"><a href="history.html">History</a></td><td class="mainmenudivider"></td></tr></table></div>
+    <div class="menuitem"><table><tr><td class="mainmenuicon"><img src="images/menu_board.png"></td><td class="mainmenutext"><a href="board_of_directors.html">Board of Directors</a></td><td class="mainmenudivider"></td></tr></table></div>
+    <div class="menuitem"><table><tr><td class="mainmenuicon"><img src="images/menu_personnel.png"></td><td class="mainmenutext"><a href="personell_registry.html">Personnel Registry</a></td></tr></table></div>
+</div>
+
+<table id="infotable">
+<tr>
+<td class="infotablecell">
+
+<h1>Edit Research Info</h1>
+
+<form name="virusForm">
+<table id="personnel">
+    <tr>
+        <td class="infolight" width="150">Number:</td>
+        <td class="infolight"><input type="text" id="objNumber"></td>
+    </tr>
+    <tr>
+        <td class="infolight">Name:</td>
+        <td class="infolight"><input type="text" id="objName"></td>
+    </tr>
+    <tr>
+        <td class="infolight">Date:</td>
+        <td class="infolight"><input type="text" id="objDate"></td>
+    </tr>
+    <tr>
+        <td class="infolight">Time:</td>
+        <td class="infolight"><input type="text" id="objTime"></td>
+    </tr>
+    <tr>
+        <td class="infolight">Creator:</td>
+        <td class="infolight"><input type="text" id="objCreator"></td>
+    </tr>
+    <tr>
+        <td class="infolight" colspan="2" style="text-align:left;">Description:<br>
+        <textarea id="objText"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td class="infolight" colspan="2">
+            <input type="button" value="Save" onclick="validateForm()">
+        </td>
+    </tr>
+</table>
+</form>
+
+</td>
+</tr>
+</table>
+</body>
+</html>
